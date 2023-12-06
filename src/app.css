@@ -1,18 +1,6 @@
-/*
-TODO:
-from web fonts
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-*/
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/*
-TODO:
-https://github.com/tailwindlabs/tailwindcss/discussions/5380
-https://www.jvp.design/blog/self-hosting-a-font-with-tailwind-and-sveltekit
-*/
 
 @layer base {
 	@font-face {
@@ -48,6 +36,21 @@ main {
   /* font-family: 'MerriweatherRegular'; */
   /* from tw theme */
   /* font-family: 'lobster'; */
+}
+
+.noselect {
+  /* iOS Safari */
+  -webkit-touch-callout: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* Konqueror HTML */
+  -khtml-user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+  /* Internet Explorer/Edge */
+  -ms-user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+  user-select: none;
 }
 
 /* 

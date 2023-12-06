@@ -12,7 +12,7 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"tauri": "tauri",
-		"tauri:dev": "tauri dev",
+		"tauri:dev": "rm -rf src-tauri/target/debug/tauri-app-svelte-kit && tauri dev",
 		"tauri:build": "tauri build",
 		"tauri:build:debug": "tauri build --debug"
 	},

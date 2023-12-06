@@ -5,7 +5,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        // 'poppins': ['Poppins', 'sans-serif']
         walkway: ['Walkway'],
         lobster: ['Lobster Two']
       },
@@ -13,4 +12,3 @@ export default {
   },
   plugins: [],
 } satisfies Config
-

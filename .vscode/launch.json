@@ -4,27 +4,6 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    // https://github.com/tauri-apps/tauri/discussions/4210
-    // https://jonaskruckenberg.github.io/tauri-docs-wip/development/debugging.html
-    // {
-    //   "name": "Front-end App Debug",
-    //   "type": "msedge",
-    //   "port": 5173,
-    //   "request": "launch",
-    //   // Remember to edit the right path to your app.
-    //   "runtimeExecutable": "${workspaceFolder}/src-tauri/target/debug/tauri-app-svelte-kit",
-    //   "useWebView": true,
-    //   "webRoot": "${workspaceFolder}",
-    //   "preLaunchTask": "ui:dev"
-    // },
-    {
-      "name": "Attach to tauri webview",
-      "port": 12345,
-      "request": "attach",
-      "type": "msedge",
-      "webRoot": "${workspaceFolder}/src",
-      "sourceMaps": true
-    },
     {
       "name": "Lauch Tauri in Browser",
       "type": "chrome",
@@ -46,15 +25,36 @@
       // task for the `beforeDevCommand` if used, must be configured in `.vscode/tasks.json`
       "preLaunchTask": "ui:dev"
     },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Tauri Production Debug",
-      "cargo": {
-        "args": ["build", "--release", "--manifest-path=./src-tauri/Cargo.toml"]
-      },
-      // task for the `beforeBuildCommand` if used, must be configured in `.vscode/tasks.json`
-      "preLaunchTask": "ui:build"
-    }
+    // https://github.com/tauri-apps/tauri/discussions/4210
+    // https://jonaskruckenberg.github.io/tauri-docs-wip/development/debugging.html
+    // {
+    //   "name": "Front-end App Debug",
+    //   "type": "msedge",
+    //   "port": 12345,
+    //   "request": "launch",
+    //   // Remember to edit the right path to your app.
+    //   "runtimeExecutable": "${workspaceFolder}/src-tauri/target/debug/tauri-app-svelte-kit",
+    //   "useWebView": true,
+    //   "webRoot": "${workspaceFolder}/src",
+    //   "preLaunchTask": "ui:dev"
+    // },
+    // {
+    //   "name": "Attach to tauri webview",
+    //   "port": 12345,
+    //   "request": "attach",
+    //   "type": "msedge",
+    //   "webRoot": "${workspaceFolder}/src",
+    //   "sourceMaps": true
+    // },
+    // {
+    //   "type": "lldb",
+    //   "request": "launch",
+    //   "name": "Tauri Production Debug",
+    //   "cargo": {
+    //     "args": ["build", "--release", "--manifest-path=./src-tauri/Cargo.toml"]
+    //   },
+    //   // task for the `beforeBuildCommand` if used, must be configured in `.vscode/tasks.json`
+    //   "preLaunchTask": "ui:build"
+    // }
   ]
 }

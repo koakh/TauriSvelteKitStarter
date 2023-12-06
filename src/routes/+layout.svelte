@@ -6,19 +6,14 @@
 	<slot />
 </main>
 
+<!-- used in app.CSS, leaved it here has a remainder
 <style>
 	.noselect {
-		/* iOS Safari */
 		-webkit-touch-callout: none;
-		/* Safari */
 		-webkit-user-select: none;
-		/* Konqueror HTML */
 		-khtml-user-select: none;
-		/* Firefox */
 		-moz-user-select: none;
-		/* Internet Explorer/Edge */
 		-ms-user-select: none;
-		/* Non-prefixed version, currently supported by Chrome and Opera */
 		user-select: none;
 	}
-</style>
+</style> -->
