@@ -1,4 +1,8 @@
-<main class="noselect">
+<script>
+  import "../app.css";
+</script>
+
+<main class="noselect layout-main">
 	<slot />
 </main>
 

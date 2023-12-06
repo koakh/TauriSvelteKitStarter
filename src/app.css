@@ -1,0 +1,84 @@
+/*
+TODO:
+from web fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+TODO:
+https://github.com/tailwindlabs/tailwindcss/discussions/5380
+https://www.jvp.design/blog/self-hosting-a-font-with-tailwind-and-sveltekit
+*/
+
+@layer base {
+	@font-face {
+		font-family: 'Lobster Two';
+		src: local('Lobster Two'), local('Lobster-Two'), local('lobster two'), local('lobster-two'),
+			url('/fonts/lobster-two/LobsterTwo-Regular.otf');
+		font-weight: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Lobster Two';
+		src: local('Lobster Two Bold'), local('Lobster-Two-Bold'), local('lobster two bold'),
+			local('lobster-two-bold'), url('/fonts/lobster-two/LobsterTwo-Bold.otf');
+		font-weight: bold;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Walkway';
+		src: local('Walkway'), local('walkway'), url('/fonts/walkway/Walkway_Bold.ttf');
+		font-weight: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Walkway';
+		src: local('Walkway'), local('walkway'), url('/fonts/walkway/Walkway_Black.ttf');
+		font-weight: bold;
+		font-display: swap;
+	}  
+}
+
+main {  
+  /* font-family: 'BarlowBlack', sans-serif; */
+  /* font-family: 'MerriweatherRegular'; */
+  /* from tw theme */
+  /* font-family: 'lobster'; */
+}
+
+/* 
+buttons: https://v1.tailwindcss.com/components/buttons 
+*/
+
+.layout-main {
+  @apply w-full min-h-screen p-4 bg-gray-200 font-lobster;
+}
+
+.layout-header {
+  @apply text-3xl text-blue-600 font-medium mb-4;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+.btn-blue:disabled {
+  @apply opacity-50;
+}
+
+.form-input-label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.form-input-text {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}

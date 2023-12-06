@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "pnpm build",
+    "beforeDevCommand": "pnpm dev",
     "devPath": "http://localhost:5173",
     "distDir": "../build"
   },
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.koakh.tauri-app-svelte-kit",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -38,7 +38,6 @@
         "providerShortName": null,
         "signingIdentity": null
       },
-      "resources": [],
       "shortDescription": "",
       "targets": "all",
       "windows": {
@@ -55,11 +54,11 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "tauri-app-svelte-kit",
-        "width": 800
+        "fullscreen": false,
+        "height": 400,
+        "resizable": true,
+        "width": 880
       }
     ]
   }
