@@ -12,7 +12,7 @@ fn greet(name: &str) -> String {
 
 fn main() {
     // https://github.com/tauri-apps/wry/issues/415
-    env::set_var( "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--proxy-server 127.0.0.1:12345" );
+    // env::set_var( "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--proxy-server 127.0.0.1:12345" );
 
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![greet])

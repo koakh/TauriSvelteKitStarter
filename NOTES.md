@@ -32,4 +32,4 @@ if not launch `Tauri Development Debug`, that is optionally, launch `pnpm tauri:
 
 - [How do I disable text selection with CSS or JavaScript?](https://stackoverflow.com/questions/3779534/how-do-i-disable-text-selection-with-css-or-javascript)
 
-check `src/routes/+layout.svelte`
+check `src/routes/+layout.svelte` or `src/app.css`
